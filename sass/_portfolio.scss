@@ -1,0 +1,141 @@
+@import "./mediaquery";
+
+.portfolio {
+    background-color: #343a40;
+    padding-bottom: 2rem;
+
+    .portfolio__heading {
+        position: relative;
+
+        .top-text {
+            width: 100%;
+            color: $white;
+            font-weight: 600;
+            font-size: 8.25rem;
+            opacity: 0.1;
+            line-height: 1.3;
+            text-align: center;
+            overflow-wrap: normal;
+
+            @include mobile {
+                font-size: calc(1.95rem + 8.4vw);
+            }
+        }
+
+        .bottom-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $white;
+            text-align: center;
+            font-size: 2.25rem;
+            font-weight: 600;
+            text-decoration: underline $green;
+            overflow-wrap: normal;
+            line-height: 1.2;
+
+            @include mobile {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .gallery-ul
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .gallery-ul .list{
+        margin-right: 10px;
+        cursor: pointer;
+        text-align: center;
+        list-style: none;
+        color: $white;
+        &.active
+        {
+            color: $green; 
+        }
+       }
+       
+       .product {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+       }
+       
+       .itemBox {
+        width: 300px;
+        height: 400px;
+        margin: 10px;
+        display: none;
+       }
+       
+       .itemBox img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+       }
+       
+       .itemBox:nth-child(1n) {
+        display: block;
+       }
+/*
+    .gallery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px auto;
+
+        .gallery-ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+
+            .list {
+                list-style: none;
+                padding: 12px 20px;
+                margin: 5px;
+                letter-spacing: 1px;
+                cursor: pointer;
+                color: $white;
+
+                &.active {
+                    color: $green;
+                }
+            }
+        }
+
+        .product {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .itemBox {
+                position: relative;
+                width: 200px;
+                height: 200px;
+                margin: 5px;
+                display: block;
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &.hide {
+                display: none;
+            }
+        }*/
+    }

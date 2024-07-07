@@ -1,0 +1,33 @@
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+    background-color: #212529;
+    color:$grey;
+    padding:2rem 2rem;
+    @include smallscreen
+    {
+        flex-direction: column;
+        width:100%;
+        text-align: center;
+    }
+
+
+
+.footer_termsandconditions {
+    display: flex;
+    gap: 20px;
+    p{cursor:pointer;}
+    @include smallscreen{
+        text-align: center; 
+        justify-content: center;
+
+    }
+.green
+{
+    color: $green;
+}
+}
+}

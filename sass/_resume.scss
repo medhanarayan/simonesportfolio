@@ -1,0 +1,206 @@
+@import "./mediaquery";
+
+.resume
+{
+    padding-bottom: 2rem;
+    background-color: #212529;
+    &__heading
+    {
+        position: relative;
+        .top-text {
+            width: 100%;
+            color: white;
+            margin-bottom: 3rem;
+            font-weight: 600;
+            font-size: 8.25rem;
+            opacity: 0.1;
+            line-height: 1.3; 
+            text-align: center;
+            overflow-wrap: normal;
+            @include mobile
+            {
+                font-size: calc(1.95rem + 8.4vw);
+            }
+        }
+
+        .bottom-text
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            font-size: 2.25rem;
+            font-weight: 600;
+            text-decoration: underline #20c997;
+            overflow-wrap: normal;
+            line-height: 1.2;
+            @include mobile
+            {
+                font-size: 1.5rem;
+            }
+        } 
+    }
+    .resume__content
+    
+    
+    {
+        display: flex;
+    justify-content: space-between; /* Adjust as needed */
+    align-items: flex-start;
+    @include mobile
+    {
+        flex-direction: column;
+    }
+        .myeducation
+        {
+           width: 50%;
+            h1{color:$white;}
+            margin:01.5rem 1rem;
+            font-weight: 600;
+            font-size: 1.50rem;
+            
+            .cards
+            {
+                
+                margin-bottom: 1.5rem;
+                width:100%;
+                    height: 100%; 
+                    box-sizing: border-box; 
+                    padding: 1.5rem; 
+                    background-color: #111418;
+                    @include mobile
+                {
+                     width: 95vw;
+                }
+                    h5
+                    {
+                        border: 0px solid red; 
+                        background-color: red;
+                        color: $white;
+                        width: 90px;
+                        padding-left: 5px;
+                        font-weight: 400;
+                        font-size: 0.875rem;
+                    }
+                    h2
+                    {
+                        font-size: 1.3125rem;
+                        margin-top: 0;margin-bottom: 0.5rem;
+                        font-weight: 500;
+                        line-height: 1.2;
+                        color: $white;
+                    }
+                    .green
+                    {
+                        color: $green;
+                        margin-top: 0;
+                        margin-bottom: 1rem;
+                        font-size: 0.875rem;
+                    }
+                    .grey
+                    {
+                        color:$grey;
+                        font-size: 1.3125rem;
+                    }
+                   
+            }
+        }
+        .myexperience
+        {
+            width: 50%;
+            h1{color:$white;}
+            margin:1.5rem 1rem;
+            font-weight: 600;
+            font-size: 1.50rem;
+            .cards
+            {
+                @include mobile
+                {
+                    width: 95vw;
+               }
+                margin-bottom: 1.5rem;
+                width:100%;
+                    height: 100%; 
+                    box-sizing: border-box; 
+                    padding: 1.5rem; 
+                    background-color: #111418;
+                    h5
+                    {
+                        border: 0px solid red; 
+                        background-color: red;
+                        color: $white;
+                        width: 90px;
+                        padding-left: 5px;
+                        font-weight: 400;
+                        font-size: 0.875rem;
+                    }
+                    h2
+                    {
+                        font-size: 1.3125rem;
+                        margin-top: 0;margin-bottom: 0.5rem;
+                        font-weight: 500;
+                        line-height: 1.2;
+                        color: $white;
+                    }
+                    .green
+                    {
+                        color: $green;
+                        margin-top: 0;
+                        margin-bottom: 1rem;
+                        font-size: 0.875rem;
+                    }
+                    .grey
+                    {
+                        color:$grey;
+                        font-size: 1.3125rem;
+                    }
+            }
+        }
+    }
+    .myskills
+    {
+        .progressbarheading
+        {
+            h1
+            {color:$white;}
+            margin:1.5rem 1rem;
+            font-weight: 600;
+            font-size: 1.50rem;
+
+            }
+            .progressbar { 
+                margin:1rem 1rem 0rem 1rem;
+                width: 46%;
+                @include tablet
+                {
+                    width:90%;
+                }
+                display: inline-block;
+                h1{font-size: 20px; 
+                    color: $white;
+             }
+                
+            } 
+          
+            .progress-container{ 
+                height: 8px;
+                background-color:#111418;
+                border-radius: 10px;
+            } 
+          
+            .progress { 
+                height: 8px;
+                border-radius: 10px;
+                background-color:$green; 
+            } 
+        }
+        .downloadbutton
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 3.5rem;
+        }
+}

@@ -1,0 +1,33 @@
+@import "./sidenav";
+@import "./introduction";
+@import "./mediaquery";
+@import "./aboutme";
+@import "./mixins";
+@import "./whatdoido";
+@import "./resume";
+@import "./portfolio";
+@import "./testimonial";
+@import "./contact";
+@import "./footer";
+* {
+  box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: "Poppins", sans-serif;
+
+}
+.content1234
+{
+  position: relative;
+    overflow: hidden;
+    padding-left:260px;
+    @include mobile
+    {
+      width:100%;
+      padding-left:0;
+      height:100%;
+      margin-top: 100px;
+      
+    }
+
+}
